@@ -1,0 +1,91 @@
+
+  h1 {
+    text-align: center;
+  }
+  .thread-parent-container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 70%;
+  }
+
+  .thread-container {
+    border: 1px solid grey;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 4px;
+    display: flex;
+  }
+    .thread-stats {
+      width: 10%;
+      padding: 5px;
+      text-align: center;
+    }
+
+  .vote-count {
+    text-align: center;
+  }
+
+  .vote-button {
+    height: 24px;
+    width: 24px;
+  }
+    .up-vote:before {
+      content: '\f17e';
+    }
+
+    .down-vote:before {
+      content: '\f17e';
+    }
+
+  .up-vote,
+  .down-vote {
+    background: none;
+    border: none;
+    width: 50px;
+    margin: 2px 0;
+  }
+      
+  .thread-wrapper {
+    width: 90%;
+    padding: 5px;
+  }
+  .thread-title {
+    font-size: 16px;
+    padding-bottom: 2px;
+  }
+  .thread-details, .thread-comments {
+    font-size: 12px;
+    color: #787c7e;
+  }
+
+
+  .icon {
+    font-size: 20px;
+    font-weight: 400;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    width: 20px;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: initial;
+  }
+
+  .sort-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sort-item {
+    list-style: none;
+    padding: 15px 10px;
+  }
+
+  .detail-page {
+    display: flex;
+  }
