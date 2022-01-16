@@ -1,0 +1,60 @@
+.main-bg {
+    background: url('https://styles.redditmedia.com/t5_2s580/styles/bannerBackgroundImage_5l1s0k4rvbr71.png?width=4000&s=d1776868bd2be4fd46ee281efaa103cac7b6c2af');
+    height: 200px;
+    border: 2px solid #ddd;
+    background-position: center;
+}
+.thread-image{
+    width: 60px;
+    height:60px;
+    border: 2px solid white;
+    border-radius: 100%;
+    display: inline-block;
+}
+.main-title {
+    margin-top: -14px;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+h1 {
+    display: inline-flex;
+    flex:1;
+    justify-content: space-between;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+.sort-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+.sort-item {
+    list-style: none;
+    padding: 6px 8px;
+    border-radius: 25px;
+    background-color: #F6f7f8;
+    margin: 15px 10px;
+    color: black;
+}
+
+.sort-item:hover {
+    color:#8ab4c8;
+}
+.hot-active, .new-active, .top-active {
+    color: #8ab4c8;
+}
+
+.thread-link {
+    display: block;
+    margin: 0.2rem 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.thread-link:visited {
+    color: #9b9b9b;
+}

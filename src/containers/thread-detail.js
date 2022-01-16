@@ -8,7 +8,11 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return Object.assign({}, dispatch);
+  return {
+    updateVoteCount: (data) => {
+      dispatch(updateVoteCount(data));
+    },
+  }
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ThreadDetail);

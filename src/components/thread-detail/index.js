@@ -15,7 +15,7 @@ const ThreadDetail = (props) => {
   }, []);
   return (
     <>
-      <Link to="/">Back</Link>
+      <Link to="/" className='back-link'>&lt; Back</Link>
       <div className="thread-parent-container detail-page">
         <div className="thread-stats">
           <ThreadStats id={thread.id} score={thread.score} updateVoteCount={props.updateVoteCount} data={props.data} />
@@ -23,7 +23,7 @@ const ThreadDetail = (props) => {
         <div className="thread-wrapper">
           <div>
             <Link to="/">{thread.subreddit_name_prefixed}</Link> Posted by{' '}
-            <span>{thread.author}</span>{' '}
+            <span>u/{thread.author}</span>{' '}
             <span>{getFromNowTime(thread.timestamp)}</span>
           </div>
           <h2>{thread.title}</h2>

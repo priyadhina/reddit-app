@@ -9,13 +9,13 @@ export default function ThreadStats (props) {
       };
    return (
     <>
-        <button className="vote-button" data-type={`${props.id}-add`} onClick={updateCount}>
+        <button className="vote-button up-vote" data-type={`${props.id}-add`} onClick={updateCount}>
            <span>
                <i className="bi-caret-up"></i>
            </span>
        </button>
        <div className="vote-count">{props.score}</div>
-       <button className="vote-button" data-type={`${props.id}-remove`} onClick={updateCount}>
+       <button className="vote-button down-vote" data-type={`${props.id}-remove`} onClick={updateCount}>
             <span>
                 <i className="bi-caret-down"></i>
             </span>

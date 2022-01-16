@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import ListPage from '../components/list-page';
-import { updateVoteCount } from '../actions/app';
+import { updateVoteCount, fetchData } from '../actions/app';
 
 const mapStateToProps = (state) => {
   return {
@@ -12,6 +12,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     updateVoteCount: (data) => {
       dispatch(updateVoteCount(data));
+    },
+    fetchData: (data) => {
+      dispatch(fetchData(data));
     },
   }
 };
