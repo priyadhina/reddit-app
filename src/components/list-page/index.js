@@ -21,17 +21,17 @@ export default function ListPage (props) {
       <h1>Reddit Dota 2</h1></div>
      <div className="thread-parent-container">
         <ul className="sort-container">
-          <li className={`${activeButton === 'hot' ? 'hot-active' : ''} sort-item`}>
+          <li className={`${activeButton === 'hot' ? 'active' : ''} sort-item`}>
             <button data-type="hot" onClick={handleSort}>
               Hot
             </button>
           </li>
-          <li className={`${activeButton === 'new' ? 'new-active' : ''} sort-item`}>
+          <li className={`${activeButton === 'new' ? 'active' : ''} sort-item`}>
             <button data-type="new" onClick={handleSort}>
               New
             </button>
           </li>
-          <li className={`${activeButton === 'top' ? 'top-active' : ''} sort-item`}>
+          <li className={`${activeButton === 'top' ? 'active' : ''} sort-item`}>
             <button  data-type="top" onClick={handleSort}>
               Top
             </button>

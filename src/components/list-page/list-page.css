@@ -44,7 +44,7 @@ h1 {
 .sort-item:hover {
     color:#8ab4c8;
 }
-.hot-active, .new-active, .top-active {
+.active {
     color: #8ab4c8;
 }
 
