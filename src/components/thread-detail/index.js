@@ -27,9 +27,12 @@ const ThreadDetail = (props) => {
             <span>{getFromNowTime(thread.timestamp)}</span>
           </div>
           <h2>{thread.title}</h2>
-          <p
+          {thread.self_text !== '' ? <p
             dangerouslySetInnerHTML={{ __html: markdown(thread.self_text || '') }}
-          />
+          /> : 
+          <div className="video-container"><video preload="auto" autoPlay="autoplay" className="thread-video" controls>
+            <source src={thread.media_content.scrubber_media_url} type="video/mp4" />  
+          </video></div>}
         </div>
       </div>
     </>

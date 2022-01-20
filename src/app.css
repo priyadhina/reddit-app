@@ -78,3 +78,14 @@
     display: flex;
     margin-bottom: 15px;
   }
+
+  .video-container {
+    max-height: 512px;
+  }
+  .thread-video {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    width: 50%;
+  }
