@@ -30,6 +30,7 @@ const transformResponse = (response) => {
     tmp_arr.self_text = data.selftext;
     tmp_arr.subreddit_name_prefixed = data.subreddit_name_prefixed;
     tmp_arr.media_content = data.media && data.media.reddit_video;
+    tmp_arr.url = data.url;
     transformedData.push(tmp_arr);
   });
   return transformedData;

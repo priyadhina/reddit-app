@@ -13,6 +13,7 @@ const ThreadDetail = (props) => {
     const findThread = props.data.find((item) => item.id === params.threadId);
     updateThread(findThread);
   }, []);
+  console.log("=media",thread.media_content);
   return (
     <>
       <Link to="/" className='back-link'>&lt; Back</Link>
@@ -30,9 +31,9 @@ const ThreadDetail = (props) => {
           {thread.self_text !== '' ? <p
             dangerouslySetInnerHTML={{ __html: markdown(thread.self_text || '') }}
           /> : 
-          <div className="video-container"><video preload="auto" autoPlay="autoplay" className="thread-video" controls>
+          thread.media_content !== null ? <div className="video-container"><video preload="auto" autoPlay="autoplay" className="thread-video" controls>
             <source src={thread.media_content.scrubber_media_url} type="video/mp4" />  
-          </video></div>}
+          </video></div> : <a href={thread.url}>{thread.url}</a>}
         </div>
       </div>
     </>
