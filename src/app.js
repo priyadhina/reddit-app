@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -7,7 +7,7 @@ import {
 import './app.css';
 import { fetchData } from './utils.js';
 import ListPage from './containers/list-page.js';
-import ThreadDetail from './containers/thread-detail.js';
+const ThreadDetail = React.lazy(() => import('./containers/thread-detail.js'));
 export default function App(props) {
   React.useEffect(() => {
     Promise.resolve(fetchData()).then((data) => {
@@ -19,7 +19,7 @@ export default function App(props) {
       <Router>
         <Routes>
           <Route path="/" element={<ListPage />} />
-          <Route path="/threads/:threadId" element={<ThreadDetail />} />
+          <Route path="/threads/:threadId" element={<Suspense fallback={<div />}><ThreadDetail /></Suspense>} />
         </Routes>
       </Router>
     </div>

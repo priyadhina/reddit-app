@@ -13,7 +13,6 @@ const ThreadDetail = (props) => {
     const findThread = props.data.find((item) => item.id === params.threadId);
     updateThread(findThread);
   }, []);
-  console.log("=media",thread.media_content);
   return (
     <>
       <Link to="/" className='back-link'>&lt; Back</Link>
